@@ -1,0 +1,62 @@
+Hello and welcome!
+This is a basic calculator program.
+It will add two numbers and print the result.
+Enter the first number:
+4
+Enter the second number:
+0
+Possible calculations:
+(A)dd
+(S)ubtract
+(M)ultiply
+(D)ivide
+Please select an option:
+d
+Your second number cannot be 0
+Hello and welcome!
+This is a basic calculator program.
+It will add two numbers and print the result.
+Enter the first number:
+4
+Enter the second number:
+4
+Possible calculations:
+(A)dd
+(S)ubtract
+(M)ultiply
+(D)ivide
+Please select an option:
+s
+Result : 0
+Hello and welcome!
+This is a basic calculator program.
+It will add two numbers and print the result.
+Enter the first number:
+5
+Enter the second number:
+100
+Possible calculations:
+(A)dd
+(S)ubtract
+(M)ultiply
+(D)ivide
+Please select an option:
+a
+Result : 105
+Hello and welcome!
+This is a basic calculator program.
+It will add two numbers and print the result.
+Enter the first number:
+200
+Enter the second number:
+300
+Possible calculations:
+(A)dd
+(S)ubtract
+(M)ultiply
+(D)ivide
+Please select an option:
+m
+Result : 60000
+
+Process finished with exit code 0
