@@ -2,22 +2,30 @@ package com.pluralsight;
 
 import java.util.Scanner;
 
+/**
+ * BasicCalculator is a simple calculator program that performs basic arithmetic operations.
+ * It prompts the user to enter two numbers and select an operation (add, subtract, multiply, divide).
+ * The result of the operation is then displayed to the user.
+ */
 public class BasicCalculator {
 
+    /**
+     * The main method is the entry point of the program.
+     * It calls the calculator method four times to perform calculations.
+     *
+     * @param args Command line arguments (not used).
+     */
     public static void main(String[] args) {
-
-
         for (int i = 0; i < 4; i++) {
             calculator();
         }
-
-
-
     }
 
+    /**
+     * The calculator method handles the main logic of the calculator.
+     * It prompts the user for two numbers and an operation, performs the operation, and prints the result.
+     */
     public static void calculator() {
-
-
         // Create a Scanner object
         Scanner scanner = new Scanner(System.in);
         System.out.println("Hello and welcome!");
@@ -32,15 +40,17 @@ public class BasicCalculator {
         int secondNumber = scanner.nextInt();
 
         // Get the operation
-        System.out.println("Possible calculations:\n" +
-                "(A)dd\n" +
-                "(S)ubtract\n" +
-                "(M)ultiply\n" +
-                "(D)ivide\n" +
-                "Please select an option:"
-        );
+        String prompt = """
+                Possible calculations:\\n +
+                                (A)dd\\n +
+                                (S)ubtract\\n +
+                                (M)ultiply\\n +
+                                (D)ivide\\n +
+                                Please select an option:\
+                """;
+        System.out.println(prompt);
         char operation = scanner.next().charAt(0);
-        double result = 0;
+        double result;
 
         // Perform the operation
         if (operation == 'A' || operation == 'a') {
@@ -62,9 +72,5 @@ public class BasicCalculator {
 
         // Print the result
         System.out.println("Result : " + result);
-
     }
-
-
-
 }
